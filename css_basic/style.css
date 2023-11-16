@@ -8,18 +8,32 @@ main {
     flex-direction: row;
     flex: auto;
 }
-article {
+main article {
     flex: 2;
     overflow-y: auto;
     background-color: white;
-}
-aside {
+    text-align: center;
+} 
+main aside {
     flex: 1;
     overflow-y: auto;
 }
 header{
     background-color: green;
 }
+header div {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
 footer {
     background-color: green;
+}
+table, th, tr, td {
+    border: 1px solid black;
+}
+table {
+    width: 350px;
+    height: 300px;
+    background-color: antiquewhite;
 }
