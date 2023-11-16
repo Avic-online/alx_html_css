@@ -12,7 +12,6 @@ main article {
     flex: 2;
     overflow-y: auto;
     background-color: white;
-    text-align: center;
 } 
 main aside {
     flex: 1;
@@ -36,4 +35,13 @@ table {
     width: 350px;
     height: 300px;
     background-color: antiquewhite;
+}
+article p{
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+article h1, h2, h3, h5 {
+    padding-left: 10px;
+    padding-right: 10px;
 }
