@@ -28,18 +28,13 @@ html {
     }
 
 body {
-    max-width: 1000px;
-    min-width: none;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    white-space: wrap;
+    box-sizing: border-box;
 }
 
 .container {
         width: var(--screen-width);
         margin-left: auto;
-        margin-right: auto;
+        margin-right: auto; 
       }
 
 main {
@@ -64,7 +59,7 @@ header {
 .header-logo {
     height: 32px;
     width: 161px;
-    margin-left: -600px;
+    /* margin-left: -600px; */
 }
 .header-logo-img {
     height: 32px; 
@@ -143,8 +138,8 @@ header {
     text-align: center;
     color: var(--color-white);
     font-family: var(--fontFamily);
-    font-weight: 700;
-    font-size: 32px; 
+    /*font-weight: 700;
+    font-size: 32px;  */
   }
   .main-part-h4 {
     margin-top: -20px;
@@ -330,8 +325,8 @@ footer {
 
 /* media queries for mobile screen of 480 pexel width starts here */
 
-/* @media screen and (max-width:480px) {
-    .dot-div {
-        flex-wrap: wrap;
+   @media screen and (max-width:480px){
+    .container {
+        max-width: 100%;
     }
-} */
+} 
