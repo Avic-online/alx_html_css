@@ -26,6 +26,13 @@ html {
     scroll-behavior: smooth;
     }
 
+body {
+    max-width: 1000px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
 .container {
         width: var(--screen-width);
         margin-left: auto;
@@ -94,7 +101,7 @@ header {
   }
   
   .nav .nav-link:hover {
-    color: var(--color-white);
+    color: #FF6565;
     text-decoration: none;
   }
   
@@ -151,6 +158,9 @@ header {
     left: 237px;
     color: white;
     font-family: source sans pro;
+  }
+  button:hover {
+    opacity: 0.9;
   }
   .main-part-p {
     font-family: source sans pro;
@@ -313,4 +323,8 @@ footer {
     position: absolute;
     margin-top: -35px;
     margin-left: 1050px;
+}
+
+@media screen and (max-width:480px) {
+    
 }
