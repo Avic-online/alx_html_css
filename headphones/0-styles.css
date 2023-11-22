@@ -28,6 +28,7 @@ html {
 
 body {
     max-width: 1000px;
+    min-width: none;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -43,7 +44,7 @@ main {
     height: 800px;
     width: var(--screen-width);
     background-image: url(images/headphones_hero_1.jpg);
-    position: relative;
+    position: relative; 
 }
 
 /*  beginning of the header session */
@@ -51,7 +52,7 @@ main {
 header {
     height: 32px;
     width: 1000.39px;
-    position: absolute;
+    position: absolute; 
     top: 27.76px;
     left: 200.61px;
     display: flex;
@@ -95,7 +96,7 @@ header {
   .nav .nav-link {
     display: block;
     padding-top: 5px;
-    position: relative;
+     position: relative; 
     text-decoration: none;
     color: var(--color-white);
   }
@@ -107,7 +108,7 @@ header {
   
   .nav .nav-link::before {
     content: '';
-    position: absolute;
+     position: absolute; 
     bottom: 0;
     left: 0;
     background-color: var(--color-white);
@@ -131,7 +132,7 @@ header {
   #main-part {
     width: 637px;
     height: 313px;
-    position: absolute;
+    position: absolute; 
     top: 372px;
     left: 382px;
     display: flex;
@@ -153,7 +154,7 @@ header {
     width: 162px;
     height: 44px;
     border-radius: 25px;
-    position: absolute;
+    position: absolute; 
     top: 100px;
     left: 237px;
     color: white;
@@ -183,7 +184,7 @@ header {
 #part-1 {
     width: 637px;
     height: 184px;
-    position: absolute;
+    position: absolute; 
     top: 910px;
     left: 382px;
     text-align: center;
@@ -222,7 +223,7 @@ header {
 #part-3 {
     width: var(--screen-width);
     height: 650px;
-    position: absolute;
+     position: absolute; 
     top: 1494px;
     background-image: url(images/headphones_hero_2.jpg);
     color: var(--color-white);
@@ -254,7 +255,7 @@ header {
     text-align: center;
     font-family: var(--fontFamily);
     width: auto;
-    position: relative;
+    position: relative; 
 }
 .dot-div-img {
     width: 190px;
@@ -262,7 +263,7 @@ header {
     margin-top: -15px;
 }
 .dot-p {
-    position: absolute;
+    position: absolute; 
     margin-left: 40px;
     margin-top: 50px;
     font-family: var(--fontFamily);
@@ -270,7 +271,7 @@ header {
     font-weight: var(--font-weight-regular);
 }
 .dot-h {
-    position: absolute;
+    position: absolute; 
     margin-left: 70px;
     margin-top: 0px;
     font-family: var(--fontFamily);
@@ -320,7 +321,7 @@ footer {
     justify-content: space-between;
     width: 130px;
     height: 30px;
-    position: absolute;
+    position: absolute; 
     margin-top: -35px;
     margin-left: 1050px;
 }
