@@ -2,7 +2,6 @@
 
 
 
-
 main {
     height: 800px;
     width: 1400px;
@@ -126,8 +125,7 @@ header {
 
 #what-we-do {
     width: 1400px;
-    height: 800px;
-    border: 3px solid black;
+    height: 680px;
     background-color: white;
 }
 
@@ -141,7 +139,6 @@ header {
     font-family: source sans pro;
 }
 #part-2 {
-    border:1px solid black;
     width: 1002px;
     height: 193px;
     position: absolute;
@@ -150,14 +147,114 @@ header {
     display: flex;
     flex: 1 1 1 1 auto;
     justify-content:space-between;
-    gap:inherit ;
+    gap:inherit;
 }
 .part-2-row {
-    border: 1px solid black;
     width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     font-family: source sans pro;
+}
+/* section for WHAT WE DO ENDS here */
+
+/* section for OUR RESULTS starts here */
+
+#part-3 {
+    width: 1400px;
+    height: 650px;
+    position: absolute;
+    top: 1494px;
+    background-image: url(images/headphones_hero_2.jpg);
+    color: white;
+    text-align: center;
+    font-family: source sans pro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.part-3-p-div {
+    width: 548px;
+    height: 140px;
+    text-align: center;
+    margin-left: 400px;
+}
+.dot {
+    height: 190px;
+    margin-top: 40px;
+    margin-left: 207px;
+    margin-right: 207px;
+    display: flex;
+    justify-content: space-between;
+    gap: inherit;
+    flex: 1 1 1 1 auto;
+}
+.dot-div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: source sans pro;
+    width: auto;
+    position: relative;
+}
+.dot-p {
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 50px;
+    font-family: source sans pro;
+    font-size: 14px;
+    font-weight: 400;
+}
+.dot-h {
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 0px;
+    font-family: source sans pro;
+    font-size: 46px;
+    font-weight: 700;
+}
+/* section for OUR RESULTS sends here */
+
+/* contact us section starts here */
+
+#contact-us {
+    width: 335px;
+    height: 373px;
+    position: absolute;
+    top: 2254px;
+    left: 533px;
+}
+input {
+    outline: none;
+    overflow: visible;
+    width: 100%;
+    text-align: left;
+    box-shadow: none;
+    font-weight: 300;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid #c4a7a7;
+    font-size: 18px;
+    padding-left: 0;
+    height: 35px;
+    margin-bottom: 30px;
+}
+
+/* contact us section ends here */
+
+/* footer starts here */
+
+footer {
+    width: 1400px;
+    height: 249px;
+    margin-top: 1300px;
+    background-color: #071629;
+    ;
+}
+.footer-socials {
+    border: 1px solid white;
+    display: flex;
+    width: 130px;
+    height: 30px;
 }
