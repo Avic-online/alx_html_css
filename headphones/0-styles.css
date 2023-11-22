@@ -29,6 +29,7 @@ header {
 .navbar-menu {
     height: 32px;
     width: 255px;
+    padding-left: 30px;
 }
 
 .navbar-menu ul {
