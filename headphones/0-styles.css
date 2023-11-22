@@ -253,8 +253,11 @@ footer {
     ;
 }
 .footer-socials {
-    border: 1px solid white;
     display: flex;
+    justify-content: space-between;
     width: 130px;
     height: 30px;
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 1050px;
 }
