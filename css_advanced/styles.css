@@ -77,6 +77,20 @@ header {
     position: relative;
     top: 0px;
     left: -8px;
+    display: flex;
+    justify-content: center;
+}
+.member-flow {
+    width: 1028px;
+    height: 153px;
+    display: flex;
+    justify-content: center;
+
+}
+.member-item {
+    border: 1px solid black;
+    width: 257px;
+    height: 153px;
 }
 
 
