@@ -4,29 +4,33 @@
     <head>
         <title> HTML Advanced Web Page</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
     </head>
     
     <body>
         <!--this is the beginning of the header part of our structure-->
         <header>
             <a href="https://alxintrotoswe.com/learning/">
-                <img src="https://149664534.v2.pressablecdn.com/wp-content/uploads/2021/06/fsblog-logo@2x.png" alt="This is the logo of our page">
+                <img src="images/logo.png" alt="This is the logo of our page" class="header-logo">
             </a>
             <!-- beginning of a block of three linked elements starts here -->
-            <div>
-                <a href="#">LINK1</a>
-                <a href="#">LINK2</a>
-                <a href="#">LINK3</a>
+            <div class="navbar">
+                <a href="#" class="nav-a">LINK1</a>
+                <a href="#" class="nav-a">LINK2</a>
+                <a href="#" class="nav-a">LINK3</a>
             </div>
             <!-- end of a block of three linked elements starts here -->
         </header>
         <!--this is the end of the header part of our structure-->
         <main>
             <!--beginning of the banner session-->
-            <section>
-                <div>
-                    <h1>TITLE</h1>
-                    <p>Beginning Is Here</p>
+            <section class="set1">
+                <div class="get-schooled">
+                    <h1 class="section1-h1">Get Schooled</h1>
+                    <div>
+                    <p class="section1-p">Smile Grin Laugh</p>
+                    </div>
                     <button>BUTTON</button>
                 </div>
                 <div>
@@ -199,20 +203,17 @@
         </main>
         <!--footer starts here-->
         <footer>
-            <div>
-                <div>
-                    <img src="images/technology advancement benefits 1.jpeg" alt="This is an advanced woman technician">
-                    <div>
-                        <a href="#">
-                            <img src="images/silent child features.jpeg" alt="This is an image of lonely boys">
-
-                        </a>
-                    </div>
-                </div>
-                <p>All Rights Reserved</p>
+            <img src="images/logo.png" alt="logo of headphones company" style="height: 32px; width: 161px; margin-top: 100px; margin-left: 150px">
+            <div class="footer-socials">
+                <img src="images/Facebook_White.png" alt="facebook icon">
+                <img src="images/Twitter_White.png" alt="twitter icon">
+                <img src="images/Instagram_White.png" alt="instagram icon">
             </div>
+            <p style="color: white; font-family: source sans pro; font-size: 12px; font-weight: 400; margin-left: 651px; margin-top: 80px; opacity: 35%">
+                &copy headphones 2020
+            </p>
         </footer>   
-        <!--footer ends here-->     
+        <!--footer ends here-->
     </body>
 
 </html>

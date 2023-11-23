@@ -1,0 +1,92 @@
+/* this is the stylesheet for css advanced project */
+
+
+
+ body {
+    max-width: 1440px;
+    height: auto;
+    background-image: url(images/Object.png);
+} 
+
+header {
+    width: 1103.41px;
+    height: 29.46px;
+    position: relative;
+    top: 35.02px;
+    left: 171.59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo {
+    width: 167.02px;
+    height: inherit;
+}
+.navbar {
+    width: 234px;
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-a {
+    text-decoration: none;
+    color: white;
+    font-family:  source Sans Pro;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15.08px;
+}
+.set1 {
+    border: 2px solid white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 0px;
+    left: 150px;
+    right: 150px;
+    height: auto;
+    align-items: center;
+}
+.get-schooled {
+    border: 1px solid white;
+    width: 100%;
+}
+.section1-h1 {
+    font-family: source sans pro;
+    font-weight: 700;
+    font-size: 120px;
+    text-align: center;
+}
+
+.section1-p {
+    font-family: source sans pro;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: -100px;
+}
+
+
+
+
+
+/* footer starts here */
+
+footer {
+    width: 1440px;
+    height: 249px;
+    margin-top: 1300px;
+    background-color: #071629;
+    margin-left: -15px;
+    margin-bottom: -15px;
+}
+.footer-socials {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    height: 30px;
+    position: absolute; 
+    margin-top: -35px;
+    margin-left: 1050px;
+}
