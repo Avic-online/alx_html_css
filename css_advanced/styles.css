@@ -68,7 +68,16 @@ header {
 }
 
 
+/* membership section starts here */
 
+.membership {
+    width: 1440px;
+    height: 502px;
+    background-color: white;
+    position: relative;
+    top: 0px;
+    left: -8px;
+}
 
 
 /* footer starts here */
