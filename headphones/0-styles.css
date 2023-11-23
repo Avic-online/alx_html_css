@@ -20,6 +20,7 @@
 
     --screen-width: 1400px;
     --screen-width-mobile: 375px;
+    --screen-width-body: 1000px
 
 }
 
@@ -29,37 +30,44 @@ html {
 
 body {
     box-sizing: border-box;
+    width: var(--screen-width);
 }
 
 .container {
-        width: var(--screen-width);
+        /*width: var(--screen-width); */
         margin-left: auto;
-        margin-right: auto; 
+        margin-right: auto;
       }
 
 main {
     height: 800px;
     width: var(--screen-width);
     background-image: url(images/headphones_hero_1.jpg);
-    position: relative; 
+    position: relative;
+}
+
+.w-6 {
+    display: none;
 }
 
 /*  beginning of the header session */
 
 header {
     height: 32px;
-    width: 1000.39px;
+    width: 1000.39px; 
     position: absolute; 
     top: 27.76px;
+    left: 30px;
     left: 200.61px;
-    display: flex;
+   display: flex;
     justify-content: space-between;
 }
 
 .header-logo {
     height: 32px;
     width: 161px;
-    /* margin-left: -600px; */
+    width: 161px;
+   /* margin-left: -600px; */
 }
 .header-logo-img {
     height: 32px; 
@@ -128,7 +136,7 @@ header {
   /* main part div inside the main element starts here */
 
   #main-part {
-    width: 637px;
+    width: 637px; 
     height: 313px;
     position: absolute; 
     top: 372px;
@@ -174,7 +182,8 @@ header {
 /* section for WHAT WE DO starts here */
 
 #what-we-do {
-    width: var(--screen-width);
+    width: 100%;
+    width: var(--screen-width); 
     height: 680px;
     background-color: var(--color-white);
 }
@@ -323,10 +332,24 @@ footer {
     margin-left: 1050px;
 }
 
-/* media queries for mobile screen of 480 pexel width starts here */
+/* media queries for mobile screen of 480 pexel width starts here 
 
-   @media screen and (max-width:480px){
+   @media screen and (max-width:480px) {
     .container {
         max-width: 100%;
     }
-} 
+    main {
+        height: 878px;
+        width: 100%;
+        background-image: url(images/headphones_hero_1.jpg);
+        position: relative; 
+    }
+    .header-logo {
+        height: 32px;
+        width: 161px;
+        margin-left: -100px;
+        }
+    .w-6 {
+        display: flex;
+    }
+} */
