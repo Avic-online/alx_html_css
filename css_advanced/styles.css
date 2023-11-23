@@ -73,7 +73,7 @@ header {
 .membership {
     width: 1440px;
     height: 502px;
-    background-color: white;
+    background-color: #071629;
     position: relative;
     top: 0px;
     left: -8px;
@@ -91,6 +91,16 @@ header {
     border: 1px solid black;
     width: 257px;
     height: 153px;
+    position: relative;
+    top: 168px;
+    color: white;
+}
+.member-button {
+    background-color: lightblue;
+    width: 162px;
+    height: 44px;
+    position: relative;
+    top:406px;
 }
 
 
