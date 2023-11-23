@@ -88,12 +88,16 @@ header {
 
 }
 .member-item {
-    border: 1px solid black;
     width: 257px;
     height: 153px;
     position: relative;
     top: 168px;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .member-button {
     background-color: lightblue;
@@ -101,7 +105,18 @@ header {
     height: 44px;
     position: relative;
     top:406px;
-    border-radius: 10px;
+    left: -600px;
+    border-radius: 15px;
+}
+.member-h1 {
+    position: relative;
+    left: 617px;
+    top: 70px;
+    color: white;
+    font-family: source sans pro;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40.22px;
 }
 
 
