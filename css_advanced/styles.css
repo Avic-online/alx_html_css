@@ -77,8 +77,17 @@ header {
     top: 1093px;
     left: -1px;
     background-color: #c170ff;
-    ;
+    
+}
 
+.quote-div {
+    border: 1px solid white;
+    width: 900px;
+    height: 158px;
+    position: relative;
+    top: 124px;
+    left: 259px;
+    display: flex;
 }
 
 /* membership section starts here */
