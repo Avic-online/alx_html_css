@@ -88,6 +88,32 @@ header {
     top: 124px;
     left: 259px;
     display: flex;
+    justify-content: space-between;
+}
+.quote-quote {
+    border: 1px solid black;
+    width: 730px;
+    height: 158px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    /* display: flex;
+    flex-direction: column; */
+    color: white;
+    font-family: source sans pro;
+    font-size: 22px;
+    line-height: 33.6px;
+
+}
+.quote-p {
+    height: 68px;
+    color: red;
+    font-weight: 400;
+}
+
+.quote-quote{
+    height: 68px;
+    color: red;
 }
 
 /* membership section starts here */
