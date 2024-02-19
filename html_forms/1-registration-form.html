@@ -51,7 +51,7 @@
     </style>
   </head>
   <body>
-    <form action="\1-contact-formStore" method="post">
+    <form action="\1-registration-formStore" method="post">
         <ul>
             <li>
                 <label for="name">Name: <span aria-label="required">*</span></label>
@@ -74,5 +74,20 @@
             </li>
         </ul>
     </form>
+
+    <script>
+        function checkForm () {
+            var password = document.getElementById('pwd').value;
+            var ConfirmPassword = document.getElementById('ConfirmPassword').value;
+
+            if (password !== ConfirmPassword) {
+                alert('passwords do not match, kindly review your password');
+                return false;
+            }
+
+            return true;
+            
+        }
+    </script>
   </body>
 </html>
