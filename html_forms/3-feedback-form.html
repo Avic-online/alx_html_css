@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title> Subscription Form</title>
+    <title> Feedback Form</title>
 
     <style>
         body {
-            background-color: aquamarine;
+            background-color: aqua;
         }
         p {
             text-align: center;
@@ -49,15 +49,24 @@
             padding: 1em;
             margin-top: 2em;
         }
-        #title_1, #title_2 {
+        #check_1, #check_2, #check_3, #check_4 {
             margin-left: -7.5em;
             margin-top: 1em;
+        }
+        .checkText {
+            margin-left: -7em;
+            text-align: left;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 0em;
         }
     </style>
   </head>
   <body>
     <p>Required fields are followed by <span aria-label="required">*</span>.</p>
-    <form action="\2-Subscription-FormStore" method="post">
+    <form action="\3-feedback-FormStore" method="post">
+        <h1>Feedback Form</h1>
         <ul>
             <li>
                 <label for="name">Name: <span aria-label="required">*</span></label>
@@ -67,31 +76,28 @@
                 <label for="mail">Email: <span aria-label="required">*</span></label>
                 <input type="email" id="mail" name="user_email" value="" required />
             </li>
-            <!-- <li>
-                <label for="pwd">Password: <span aria-label="required">*</span></label>
-                <input type="password" id="pwd" name="password" required />
+            <h3>How Do You Rate Our Website?</h3>
+            <li>
+                <input type="checkbox" id="check_1" name="checkbox" value="" required />
+                <label for="check_1" class="checkText">Excellent</label>
             </li>
             <li>
-                <label for="ConfirmPassword">Confirm Password: <span aria-label="required">*</span></label>
-                <input type="password" id="ConfirmPassword" name="ConfirmPassword" required />
+                <input type="checkbox" id="check_2" name="checkbox" value="" required />
+                <label for="check_1" class="checkText">Good</label>
             </li>
             <li>
-                <button type="submit">SUBMIT</button>
-            </li> -->
+                <input type="checkbox" id="check_3" name="checkbox" value="" required />
+                <label for="check_1" class="checkText">Average</label>
+            </li>
+            <li>
+                <input type="checkbox" id="check_4" name="checkbox" value="" required />
+                <label for="check_1" class="checkText">Poor</label>
+            </li>
+            <h3>Upload A Valid Means Of Identification</h3>
+            <li>
+                <input type="file" id="fileUpload" name="file1" required />
+            </li>
         </ul>
-        <fieldset>
-            <legend>Subscription Preference <span aria-label="required">*</span></legend>
-            <ul>
-                <li>
-                    <label for="title_1">Monthly</label>
-                    <input type="radio" id="title_1" name="title" value="m" />
-                </li>
-                <li>
-                    <label for="title_2">Yearly</label>
-                    <input type="radio" id="title_2" name="title" value="y" />
-                </li>
-            </ul>
-        </fieldset>
     </form>
   </body>
 </html>
