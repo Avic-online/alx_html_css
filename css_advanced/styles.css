@@ -1,191 +1,407 @@
-/* this is the stylesheet for css advanced project */
+/* function starts here */
+:root 
+{
+ --primary-color:white;
 
+}
 
+/* the css styling of our web page starts here! */
 
- body {
-    max-width: 1440px;
-    height: 3718px;
+/* body {
+    width: 1440px;
+} */
+
+.container-header {
+    border: 3px solid white;
+    width: 100%;
+    height: auto;
     background-image: url(images/Object.png);
-} 
+    /* background-repeat: no-repeat; */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
 
 header {
-    width: 1103.41px;
-    height: 29.46px;
-    position: relative;
-    top: 35.02px;
-    left: 171.59px;
+    width: 80%;
+    height: 8.4vh;
+    margin-left: 10%;
+    padding-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.header-logo {
-    width: 167.02px;
-    height: inherit;
-}
-.navbar {
-    width: 234px;
-    height: 15px;
-    display: flex;
-    justify-content: space-between;
-}
-.nav-a {
-    text-decoration: none;
-    color: white;
-    font-family:  source Sans Pro;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15.08px;
-}
-.set1 {
-    border: 2px solid white;
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    top: 0px;
-    left: 150px;
-    right: 150px;
-    height: auto;
-    align-items: center;
-}
-.get-schooled {
-    border: 1px solid white;
-    width: 100%;
-}
-.section1-h1 {
-    font-family: source sans pro;
-    font-weight: 700;
-    font-size: 120px;
-    text-align: center;
 }
 
-.section1-p {
+header > img {
+    width: 20%;
+}
+
+header > ul {
+    list-style: none;
+    padding-top: -30px;
+    display: flex;
+    padding-top: 0%;
+    column-gap: 50px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+header > ul > a:hover {
+    color: red;
+}
+ a {
+    text-decoration: none;
     font-family: source sans pro;
-    font-weight: 700;
-    font-size: 16px;
+    color: var(--primary-color);
+}
+
+/* section in the header container starts here */
+
+section {
+    width: 80%;
+    height: 140vh;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.section-get-schooled {
+    width: 70%;
+    height: 50vh;
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow:hidden;
+}
+.section-get-schooled > h1 {
+    font-size: 100px;
+    font-weight: 800;
+    color: white;
+    font-family: source sans pro;
+    margin-top: 40px;
+}
+.get-schooled-h4 {
+    width: 40%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-family: source sans pro;
+    color: var(--primary-color);
     margin-top: -100px;
 }
-
-/* beginning of quoteblock session */
-
-.section-quote {
-    border: 3px solid white;
-    width: 1440px;
-    height: 392px;
-    position: relative;
-    top: 1093px;
-    left: -1px;
-    background-color: #c170ff;
-    
+.section-get-schooled > button {
+    background-color: hsla(274, 100%, 72%, 1);
+    height: 7vh;
+    width: 25%;
+    color: var(--primary-color);
+    margin-top: 50px;
+    border-radius: 15px;
+    border-style: none;
+    font-family: source sans pro;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17.6px;
+    text-align: center;
+}
+.section-get-schooled > button:hover {
+    opacity: 80%;
+}
+.section-h1 {
+    margin-top: 50px;
+    color: var(--primary-color);
+    font-family: source sans pro;
+    font-weight: 100;
+}
+.authors-flex {
+    width: 90%;
+    height: 40vh;
+    margin-top: 0vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    overflow: hidden;
+}
+.authors {
+    width: 20%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    color: var(--primary-color);
+    overflow: hidden;
+}
+.authors > h3 {
+    margin-top: 0px;
+    font-family: source sans pro;
+}
+.authors > p {
+    margin-top: -10px;
+    font-family: source sans pro;
+    font-style: italic;
+    overflow: hidden;
 }
 
-.quote-div {
-    border: 1px solid white;
-    width: 900px;
-    height: 158px;
-    position: relative;
-    top: 124px;
-    left: 259px;
+
+/* main section of our page starts here! */
+
+main {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: auto;
+    margin-top: -70px;
+    margin-left: -2px;
+}
+
+.section-testimony {
+    width: 100%;
+    height: 66.6vh;
+    margin-left: 5px;
+    /* margin-top: -280px; */
+    display: flex;
+    flex-direction: row;
+    background-color: hsla(274, 100%, 72%, 1);
+    overflow-y: visible;
+}
+
+.section-testimony > img {
+    margin-left: 15%;
+}
+
+.testimony-text {
+    color: white;
+    font-family: source sans pro;
+    width: 55%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.testimony-text > p {
+    margin-top: -5px;
+}
+
+/* the tutorial section starts here */
+
+#tutorials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 450px;
+    margin: 5%;
+}
+.video {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+
+}
+.video-item {
+    width: 20%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    color: var(--primary-color);
+    overflow: hidden;
+}
+#tutorials > h1 {
+    font-family: source sans pro;
+}
+#tutorials > h1 > strong {
+    color: hsla(274, 100%, 72%, 1);
+}
+
+.video-text {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.video-text > p {
+    color: black;
+    font-family: source sans pro;
+    font-size: 12px;
+    margin-top: -10px;
+}
+.video-text > h3 {
+    color: black;
+    font-family: source sans pro;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.philip {
+    display: flex;
+    height: 20px;
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 20px;
+    align-items: center;
+}
+.philip > img {
+    width: 10%;
+    height: 80%;
+}
+.philip > p {
+    color: hsla(274, 100%, 72%, 1);
+    margin-left: 5px;
+    font-size: 12px;
+    font-family: source sans pro;
+}
+.star {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+    width: 90%;
+    margin-left: 20px;
+    color: hsla(274, 100%, 72%, 1);
+    font-family: source sans pro;
+    font-size: 12px;
+    margin-right: 20px;
+}
+.star > img {
+    height: 50%;
+    width: 40%;
+}
+
+
+/* the membership section starts here */
+
+#membership {
+    height: 502px;
+    width: 100%;
+    background-color: #071629;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.member-flex {
+    width: 90%;
+    height: 153px;
     display: flex;
     justify-content: space-between;
 }
-.quote-quote {
-    border: 1px solid black;
-    width: 730px;
-    height: 158px;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    /* display: flex;
-    flex-direction: column; */
+#membership > h1 {
     color: white;
     font-family: source sans pro;
-    font-size: 22px;
-    line-height: 33.6px;
-
+} 
+#membership > h1 > strong {
+    color: hsla(274, 100%, 72%, 1);
 }
-.quote-p {
-    height: 68px;
-    color: red;
-    font-weight: 400;
-}
-
-.quote-quote{
-    height: 68px;
-    color: red;
-}
-
-/* membership section starts here */
-
-.membership {
-    width: 1440px;
-    height: 502px;
-    background-color: #071629;
-    position: relative;
-    top: 2109px;
-    left: -8px;
+.m-flex-item {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-}
-.member-flow {
-    width: 1028px;
-    height: 153px;
-    display: flex;
-    justify-content: center;
-
-}
-.member-item {
-    width: 257px;
-    height: 153px;
-    position: relative;
-    top: 168px;
+    width: 20%;
     color: white;
+    font-family: source sans pro;
+    overflow: hidden;
+}
+.m-flex-item > img {
+    height: 40px;
+    margin-top: 5px;
+}
+.m-flex-item > h3 {
+    margin-top: 10px;
+}
+.m-flex-item > p {
+    text-align: center;
+    margin-top: -10px;
+}
+#membership > button {
+    width: 10%;
+    height: 40px;
+    background-color: hsla(274, 100%, 72%, 1);
+    color: white;
+    font-family: source sans pro;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#membership > button:hover {
+    opacity: 90%;
+}
+
+/* this is the cascading styling for the frequently asked questions part */
+
+#faq {
+    width: 80%;
+    height: 707px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10%;
+    margin-top: 0px;
+    overflow: hidden;
+}
+.faq-div {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+.faq-item {
+    width: 40%;
+    height: 242px;
+    display: flex;
+    flex-direction: column;
+    font-family: source sans pro;
+    overflow: hidden;
+}
+#faq > h1 {
+    font-weight: 100;
+    font-size: 60px;
+    font-family: source sans pro;
+}
+
+/* footer part of our web page starts here for the styling */
+
+footer {
+    background-color: #071629;
+    height: 249px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-}
-.member-button {
-    background-color: #c170ff;
-    width: 162px;
-    height: 44px;
-    position: relative;
-    top:406px;
-    left: -600px;
-    border-radius: 15px;
-}
-.member-h1 {
-    position: relative;
-    left: 617px;
-    top: 70px;
-    color: white;
-    font-family: source sans pro;
-    font-size: 32px;
-    font-weight: 300;
-    line-height: 40.22px;
-}
+    gap: 80px;
 
-
-/* footer starts here */
-
-footer {
-    width: 1440px;
-    height: 249px;
-    position: relative;
-    top: 3469px;
-    /*margin-top: 1300px; */
-    background-color: #071629;
-    margin-left: -15px;
-    /*margin-bottom: -15px; */
 }
-.footer-socials {
+.footer-nav {
+    width: 80%;
+    height: 30px;
     display: flex;
     justify-content: space-between;
-    width: 130px;
-    height: 30px;
-    position: absolute; 
-    margin-top: -35px;
-    margin-left: 1050px;
+    margin-top: 80px;
+    overflow: hidden;
+}
+.footer-socials {
+    width: 12%;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+footer > p {
+    color: rgb(70, 70, 75);
+    font-family: source sans pro;
 }
