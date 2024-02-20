@@ -93,20 +93,5 @@
             </ul>
         </fieldset>
     </form>
-
-    <script>
-        function validateForm () {
-            var password = document.getElementById('pwd').value;
-            var ConfirmPassword = document.getElementById('ConfirmPassword').value;
-
-            if (password !== ConfirmPassword) {
-                console.log('passwords do not match, kindly review your password');
-                return false;
-            }
-
-            return true;
-
-        }
-    </script>
   </body>
 </html>
